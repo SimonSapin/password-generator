@@ -844,158 +844,158 @@ there.
 @media (min-width: 1200px) {}
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  color: #333;
   font size: 100%;
-  color: #333
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin: inherit auto;
   display: block;
   text-align: center;
-  margin: inherit auto
 }
 
 p {
   font-size: 16px;
+  font-weight: 300;
   line-height: 1.3em;
-  font-weight: 300
 }
 
 hr {
-  font-family: 'Roboto', sans-serif;
+  margin: 5px 10%;
   display: block;
-  margin: 5px 10%
+  font-family: 'Roboto', sans-serif;
 }
 
 noscript {
+  margin: 1em;
   border: 4px solid red;
   padding: .2em;
-  margin: 1em
 }
 
 .portrait {
-  display: block;
-  width: 120px;
-  height: 120px;
-  border-radius: 100%;
-  overflow: hidden;
-  border: 3px solid #fff;
-  z-index: 500;
-  background-color: #fff;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
-  margin-left: auto;
-  margin-right: auto
-}.portrait img {
-  display: block;
   margin-left: auto;
   margin-right: auto;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  display: block;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  overflow: hidden;
+  z-index: 500;
+  background-color: #fff;
+}.portrait img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  display: block;
   max-height: none!important;
   width: 100%;
   height: 100%;
-  border-radius: 100%
 }
 
 .img-circle {
-  border-radius: 50%
+  border-radius: 50%;
 }
 
 .pageHead {
   margin: 20px auto 0;
-  text-align: center
+  text-align: center;
 }.pageHead h1, h2, h3, h4, h5, h6 {
   margin: 8px auto;
 }
 
 .main {
-  font-family: 'Open Sans', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 540px;
   display: block;
-  text-align: center;
   align-content: center;
-  margin-left: auto;
-  margin-right: auto
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }.main p {
-  margin: 0 25px
+  margin: 0 25px;
 }
 
 .secondary {
-  font-family: 'Roboto', sans-serif;
-  display: block;
   margin-left: 10%;
-  margin-right: 10%
+  margin-right: 10%;
+  display: block;
+  font-family: 'Roboto', sans-serif;
 }
 
 .checkboxes {
   display: inline-block;
-  text-align: left
+  text-align: left;
 }.checkboxes label {
-  font-weight: normal;
   margin: 0 5px;
-  height: 30px
+  height: 30px;
+  font-weight: normal;
 }
 
 .hiddenMenu {
+  margin: 15px auto;
   width: 100%;
   display: block;
-  text-align: center;
-  margin: 15px auto;
   display: none;
+  text-align: center;
 }.hiddenMenu h5 {
-  margin: 5px 0
+  margin: 5px 0;
 }.hiddenMenu h6 {
-  font-size: 80%
+  font-size: 80%;
 }
 
 .button1 {
   margin: 5px auto;
-  background-color: #cfe9fc
+  background-color: #cfe9fc;
 }
 
 .button2 {
   margin: 25px auto 15px;
-  background-color: #90ff90
+  background-color: #90ff90;
 }
 
 .inputNumber {
   min-width: 70px;
-  text-align: center
+  text-align: center;
 }
 
 .inputText {
   width: 50%;
-  text-align: center
+  text-align: center;
 }
 
 .outputText {
-  padding: 6px 10px;
   margin: 5px;
-  outline: 0;
-  background: transparent;
+  padding: 6px 10px;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
+  outline: 0;
+  min-width: 50%;
   text-align: center;
-  min-width: 50%
+  background: transparent;
 }
 
 .warning {
+  margin: 5px 5px 0 5px;
   padding: 12px;
   color: #9f6000;
+  text-align: center;
   background-color: #feefb3;
-  margin: 5px 5px 0 5px;
-  text-align: center
 }.warning:before {
-    content: '\26A0'
+    content: '\26A0';
 }
 
 .browser-support-message {
-  background: #dcdde0;
+  padding: 15px;
   color: #3d3f45;
   text-align: center;
-  padding: 15px
+  background: #dcdde0;
 }.browser-support-message p {
   margin: 0;
-  padding: 0
+  padding: 0;
 }.browser-support-message a {
   color: #3d3f45;
-  border-color: #3d3f45
+  border-color: #3d3f45;
 }
