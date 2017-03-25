@@ -26,16 +26,16 @@ $(document).ready(function() {
     // If checkbox 5 is checked, we already have characters in cbox 4
     else if (document.getElementById('cbox4').checked)
       characterSet += '!@#$%^&*(){}[]?';
-    
+
     // Get the additional characters that are (non-space && not yet included)
     var extraChars = document.getElementById('additionalCharacters')
                              .value;
-    for (var character of extraChars) {
-      if (character !== ' ' && characterSet.indexOf(character) != -1) {
+    for (const character of extraChars) {
+      if (character !== ' ' && characterSet.indexOf(character) == -1) {
         characterSet += character;
       }
     }
-    
+
     // Generate the password.
     var passwordLength = Number(document.getElementById('passwordLength')
                                         .value);
@@ -45,7 +45,7 @@ $(document).ready(function() {
     for (var i = 0; i < passwordLength; ++i) {
       password += characterSet.charAt(randomNums[i] % characterSet.length);
     }
-    
+
     // Show the password.
     document.getElementById('result')
             .value = password;
