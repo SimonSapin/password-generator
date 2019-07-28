@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <title>Password Generator</title>
   <link rel="shortcut icon" type="image/x-icon" href="img/lock.ico"/>
-  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i|Roboto:300,300i&amp;subset=latin-ext">
 </head>
 <body>
@@ -24,42 +24,37 @@
     </div>
   </noscript>
   <div class="pageHead">
-    <h3>Password Generator</h3>
-    <p>Specify desired length and character set below.</p>
+    <h3>Générateur de mots de passe</h3>
   </div>
   <hr>
   <div class="main">
     <div>
-      <h5>Length</h5>
-      <input type="number" id="passwordLength" class="inputNumber" value=15 min=0 max=6000 pattern="[0-9]">
+      <h5>Longueur</h5>
+      <input type="number" id="passwordLength" class="inputNumber" value=20 min=0 max=6000 pattern="[0-9]">
       </input>
     </div>
-    <p><button id="abc" class="button1">Show advanced options</button></p>
-    <div id="advancedOptions" class="hiddenMenu">
-      <h5>Character Set</h5>
-      <h6><strong>(ASCII only)</strong></h6>
+    <div>
+      <h5>Caractères</h5>
       <div>
         <div class="checkboxes">
-          <label><input type="checkbox" id="cbox1" checked="checked"> UPPER-CASE alphabet (A-Z)</label>
-          <label><input type="checkbox" id="cbox2" checked="checked"> lower-case alphabet (a-z)</label>
-          <label><input type="checkbox" id="cbox3" checked="checked"> Numbers (0-9)</label>
-          <label><input type="checkbox" id="cbox4" checked="checked"> Commonly-Allowed Symbols</label>
-          <label><input type="checkbox" id="cbox5"> All Keyboard Symbols</label>
+          <label><input type="checkbox" id="cbox1" checked="checked"> Majuscules (A-Z)</label>
+          <label><input type="checkbox" id="cbox2" checked="checked"> Minuscules (a-z)</label>
+          <label><input type="checkbox" id="cbox3" checked="checked"> Chiffres (0-9)</label>
+          <label>
+            <input type="checkbox" id="cbox4"> Symboles :
+            <input type="text" id="additionalCharacters" class="inputText" value="!@#$%^&*(){}[]?">
+          </label>
         </div>
-      </div>
-      <div>
-        <h5>Additional Characters</h5>
-        <input type="text" id="additionalCharacters" class="inputText" placeholder="e.g. ∭й@ж!⨇⅝Дфэ♕&amp;₤₡я">
       </div>
     </div>
     <div>
-      <button type="button" id="generateButton" class="button2">Generate!</button>
+      <button type="button" id="generateButton" class="button2">Re-générer !</button>
     </div>
     <div>
       <textarea type="text" id="result" class="outputText"></textarea>
     </div>
   </div>
   <hr>
-  <script type="text/javascript" src="js/scripts.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

@@ -973,6 +973,7 @@ noscript {
   border-radius: 4px;
   outline: 0;
   min-width: 50%;
+  min-height: 20em;
   text-align: center;
   background: transparent;
 }
